@@ -25,6 +25,18 @@ body {
         background-position: center; */
     }
 
+    .container .items {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        justify-items: center;
+        padding: 10px;
+    }
+
+    .container .items img {
+        padding: 5px;
+        height: 100px;
+    }
+
     .blank {
         padding: 15px;
         width: 110px;
@@ -58,6 +70,7 @@ body {
     .container p {
         font-size: 20px;
         color: white;
+        margin-bottom: 70px;
     }
 
     .container img {
@@ -90,6 +103,18 @@ body {
 @media(max-width: 420px) {
     body {
         background-color: black;
+    }
+
+    .container .items {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        justify-items: center;
+        padding: 10px;
+    }
+
+    .container .items img {
+        padding: 5px;
+        height: 70px;
     }
     
     .body {
