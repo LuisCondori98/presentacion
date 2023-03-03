@@ -84,7 +84,10 @@ body {
     }
 
     .container-profile {
+        display: flex;
+        flex-direction: column;
         padding: 15px;
+        align-items: center;
     }
 
     .container-profile img{
@@ -97,6 +100,10 @@ body {
 
     .container-profile img:hover {
         transform: scale(1.1);
+    }
+
+    .container-profile .saludo {
+        color: white;
     }
 
     .copyright {
@@ -170,6 +177,10 @@ body {
         border-radius: 50%;
         background-color: white;
         height: 120px;
+    }
+
+    .container-profile .saludo {
+        color: white;
     }
 
     .copyright {
