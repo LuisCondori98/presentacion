@@ -35,6 +35,11 @@ body {
     .container .items img {
         padding: 5px;
         height: 100px;
+        cursor: pointer;
+    }
+
+    .container .items img:hover {
+        transform: scale(1.2);
     }
 
     .blank {
