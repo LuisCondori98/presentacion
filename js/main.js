@@ -1,6 +1,7 @@
 const container = document.getElementById("container-profile")
+const fotoperfil = document.getElementById("profile")
 
-const fotoperfil = document.getElementById("profile").addEventListener("click", () => {
+    fotoperfil.addEventListener("mouseover", () => {
 
     const saludo = document.createElement("label")
     saludo.className = "saludo"
@@ -8,5 +9,9 @@ const fotoperfil = document.getElementById("profile").addEventListener("click", 
 
 
     container.append(saludo)
+
+    fotoperfil.addEventListener("mouseout", () => {
+        saludo.remove()
+    })
 
 })

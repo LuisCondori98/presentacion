@@ -19,10 +19,33 @@ body {
         background-position: center;
     }
 
+    @keyframes anime {
+        0%{
+            margin-right: 1000px;
+        }
+    }
+
+    @keyframes release {
+        0%{
+            margin-bottom: 500px;
+        }
+    }
+
+    @keyframes renew {
+        0%{
+            margin-top: 500px;
+        }
+    }
+
     .container {
         /* background-image: url("./img/wallpaper.jpg");
         height: 95vh;
         background-position: center; */
+    }
+
+    .container .title {
+        /* position: relative; */
+        animation: anime 3s;
     }
 
     .container .items {
@@ -49,6 +72,7 @@ body {
         flex-direction: column;
         justify-content: center;
         gap: 50px;
+        animation: release 3s;
     }
 
     .blank svg {
@@ -66,6 +90,7 @@ body {
         justify-content: space-between;
         text-align: center;
         padding: 10px;
+        margin-left: 50px;
     }
 
     .container h1 {
@@ -88,6 +113,8 @@ body {
         flex-direction: column;
         padding: 15px;
         align-items: center;
+        width: 170px;
+        animation: renew 3s;
     }
 
     .container-profile img{
@@ -98,9 +125,9 @@ body {
         cursor: pointer;
     }
 
-    .container-profile img:hover {
+    /* .container-profile img:hover {
         transform: scale(1.1);
-    }
+    } */
 
     .container-profile .saludo {
         color: white;
@@ -109,6 +136,7 @@ body {
     .copyright {
         text-align: center;
         color: white;
+        animation: anime 3s;
     }
 }
 
