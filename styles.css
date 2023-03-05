@@ -67,12 +67,13 @@ body {
 
     .blank {
         padding: 15px;
-        width: 110px;
+        width: 80px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         gap: 50px;
         animation: release 3s;
+        background-color:rgb(18, 17, 20);
     }
 
     .blank svg {
@@ -90,7 +91,7 @@ body {
         justify-content: space-between;
         text-align: center;
         padding: 10px;
-        margin-left: 50px;
+        margin-left: 80px;
     }
 
     .container h1 {
@@ -106,6 +107,15 @@ body {
     .container img {
         height: 280px;
         border-radius: 50px;
+    }
+
+    .container .items label{
+        color: white;
+        position: absolute;
+        background-color: black;
+        padding: 10px;
+        top: 10;
+        margin-right: 520px;
     }
 
     .container-profile {
